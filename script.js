@@ -36,6 +36,19 @@ function closeNav() {
   body.classList.remove("overflow-hidden");
 }
 
+// Close navigation when clicking outside of it
+document.addEventListener("click", (event) => {
+  const isClickInsideNav = primaryNav.contains(event.target);
+  const isClickOnToggler = navToggler.contains(event.target);
+
+  if (!isClickInsideNav && !isClickOnToggler) {
+    const visibility = primaryNav.getAttribute("data-visible");
+    if (visibility === "true") {
+      closeNav();
+    }
+  }
+});
+
 window.onscroll = function () {
   scrollFunction();
 };
