@@ -63,12 +63,13 @@ function scrollFunction() {
   }
 }
 
-window.addEventListener("load", function () {
-  if ("scrollRestoration" in history) {
-    history.scrollRestoration = "manual";
-  }
-  window.scrollTo(0, 0);
-});
+// top on reload
+// window.addEventListener("load", function () {
+//   if ("scrollRestoration" in history) {
+//     history.scrollRestoration = "manual";
+//   }
+//   window.scrollTo(0, 0);
+// });
 
 const form = document.getElementById("form");
 const result = document.getElementById("result");
