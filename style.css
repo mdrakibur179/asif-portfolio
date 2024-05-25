@@ -421,6 +421,12 @@ header {
   font-weight: 700;
 }
 
+.main-section__pro-items p {
+  line-height: 1.5;
+  font-weight: 500;
+  color: rgb(212, 210, 210);
+}
+
 .main-section__pro {
   color: white;
 }
@@ -653,10 +659,19 @@ header {
   gap: 3rem;
 }
 
+.contact-info__div p {
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgb(213, 211, 211);
+}
+
 .contact-details {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.contact-details p {
+  color: white;
 }
 
 .footer-section {
