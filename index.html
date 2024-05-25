@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
@@ -40,7 +41,7 @@
         </div>
     </header>
 
-    <section class="hero-section">
+    <section class="hero-section" data-aos="fade-up">
         <section class="bg-video">
             <!-- <video class="video-background" autoplay muted loop>
                 <source
@@ -53,12 +54,12 @@
         <main class="hero-cta container">
             <div class="cta-desc">
                 <p>Turning Videos to a Cinematic Masterpiece</p><br>
-                <button class="btn-primary">Contact Me</button>
+                <a href="#contact"><button class="btn-primary">Contact Me</button></a>
             </div>
         </main>
     </section>
 
-    <section class="main-section" id="about-us">
+    <section class="main-section" id="about-us" data-aos="fade-up" data-aos-delay="200">
         <div class="main-section__desc container">
             <div class="main-section__desc-name">
                 <p>I'm <span class="color-primary"><span class="name-primary">A</span></span>sif, a <span
@@ -75,22 +76,22 @@
         </div>
 
         <div class="main-section__img container">
-            <img class="asif-img" src="img/asif-pic.jpg" alt="asif-pic">
+            <img class="asif-img" src="img/asif-pic.jpg" alt="asif-pic" data-aos="zoom-in" data-aos-duration="1000">
             <div class="main-section__pro">
-                <div class="main-section__pro-items">
+                <div class="main-section__pro-items" data-aos="fade-down" data-aos-duration="500">
                     <h3 class="color-primary">EFFICIENT</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, harum, natus voluptates, minus
                         ratione pariatur dolorum corporis ut quos recusandae nemo maxime. Maiores, quaerat obcaecati
                         repellat, soluta iusto iste ut officiis cumque atque reprehenderit expedita a?</p>
                 </div> <br> <br> <br>
-                <div class="main-section__pro-items">
+                <div class="main-section__pro-items" data-aos="fade-down" data-aos-duration="1000">
                     <h3 class="color-primary">PROFESSIONAL</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vel quidem adipisci aperiam
                         autem illo ea aut, laborum veritatis sapiente magni, nemo magnam tempora ab facere harum?
                         Blanditiis labore cum fugiat perspiciatis ipsam vero quos deleniti, aperiam aut nihil quo
                         aliquid eaque.</p>
                 </div> <br> <br> <br>
-                <div class="main-section__pro-items">
+                <div class="main-section__pro-items"  data-aos="fade-down" data-aos-duration="1500">
                     <h3 class="color-primary">EXPERIENCED</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem et, labore blanditiis
                         quasi adipisci qui dolorum! Itaque magni distinctio ad esse sed autem?</p>
@@ -101,7 +102,7 @@
         <div class="our-services container" id="services">
             <h1 class="our-services-header">I can help you with</h1>
             <div class="card-container">
-                <div class="card-img">
+                <div class="card-img" data-aos="fade-up" data-aos-duration="500">
                     <img class="bg-img" src="img/video-editing.jpeg" alt="editing" />
                     <div class="card-desc">
                         <p class="name-date">Editing</p>
@@ -110,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="card-img">
+                <div class="card-img" data-aos="fade-up" data-aos-duration="1000">
                     <img class="bg-img" src="img/sound-design.jpeg" alt="color-correction" />
                     <div class="card-desc">
                         <p class="name-date">Sound Design</p>
@@ -119,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="card-img">
+                <div class="card-img" data-aos="fade-up" data-aos-duration="1500">
                     <img class="bg-img" src="img/color-correction.jpeg" alt="sound-design" />
                     <div class="card-desc">
                         <p class="name-date">Color Correction</p>
@@ -133,7 +134,7 @@
 
     <div class="recent-works" id="recent-works">
         <h1 style="color: rgb(255, 255, 255);">Recent Works</h1>
-        <div class="work-grid container">
+        <div class="work-grid container" data-aos="fade-down">
             <div class="work-item">
                 <a href="https://www.youtube.com/watch?v=HJRzUQMhJMQ" target="_blank">
                     <div class="overlay">
@@ -177,7 +178,7 @@
 
     <section class="contact-section" id="contact">
         <div class="contact-us container">
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-down" data-aos-duration="1000">
                 <h1><span class="color-primary">Let's Work</span> Together</h1>
                 <div class="contact-info__div">
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
@@ -189,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" data-aos="fade-up" data-aos-duration="1000">
                 <form id="form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="72e3a081-0a8e-4cfd-8879-332996b35c3e" />
                     <input type="text" name="full_name" placeholder="Full Name" required autocomplete="off">
@@ -218,6 +219,7 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         var typed = new Typed('#element', {
@@ -226,6 +228,7 @@
             backSpeed: 100,
             loop: true
         });
+        AOS.init();
     </script>
 </body>
 

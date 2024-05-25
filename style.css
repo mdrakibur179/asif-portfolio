@@ -65,6 +65,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: black;
 }
 
 .overflow-hidden {
@@ -169,8 +170,8 @@ header {
     display: none;
     position: absolute;
     left: 0%;
-    top: 128%;
-    background-color: #2f3136;
+    top: 125%;
+    background-color: #3c3c3c;
     flex-direction: column;
     width: 100%;
     border-radius: 0.2rem;
@@ -347,11 +348,13 @@ header {
   background-color: black;
   overflow: hidden;
 }
+.main-section__desc-name {
+  height: 18rem;
+}
 .main-section__desc-name p {
   font-size: 4rem;
   font-weight: 800;
   color: white;
-  height: 18rem;
 }
 @media (max-width: 620px) {
   .main-section__desc-name p {
@@ -665,6 +668,7 @@ header {
   display: flex;
   justify-content: space-between;
   color: white;
+  align-items: center;
 }
 
 .social-meida {
