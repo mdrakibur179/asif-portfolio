@@ -3,6 +3,7 @@ const navToggler = document.querySelector(".nav-toggler");
 const body = document.querySelector("body");
 const navItems = document.querySelectorAll(".nav-list a");
 const content = document.querySelector(".content");
+const header = document.querySelector(".header");
 
 const nav = document.getElementById("header");
 
@@ -114,3 +115,8 @@ form.addEventListener("submit", function (e) {
       }, 3000);
     });
 });
+
+window.history.scrollRestoration = "manual";
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
