@@ -340,8 +340,12 @@ header {
   }
 }
 
+.button-cta {
+  max-width: max-content;
+}
+
 .btn-primary {
-  width: max-content;
+  width: 100%;
   cursor: pointer;
   padding: 1rem 2rem;
   border: 2px solid rgb(5, 230, 91);
