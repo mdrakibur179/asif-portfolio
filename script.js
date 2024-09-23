@@ -1,7 +1,8 @@
 const primaryNav = document.querySelector(".primary-nav");
 const navToggler = document.querySelector(".nav-toggler");
 const body = document.querySelector("body");
-const navItems = document.querySelectorAll(".nav-list a"); // Select all nav list items
+const navItems = document.querySelectorAll(".nav-list a");
+const content = document.querySelector(".content");
 
 const nav = document.getElementById("header");
 
@@ -23,10 +24,12 @@ function toggleNav() {
     navToggler.setAttribute("aria-expanded", true);
     primaryNav.setAttribute("data-visible", true);
     body.classList.add("overflow-hidden");
+    content.classList.add("blur");
   } else {
     navToggler.setAttribute("aria-expanded", false);
     primaryNav.setAttribute("data-visible", false);
     body.classList.remove("overflow-hidden");
+    content.classList.remove("blur");
   }
 }
 
@@ -34,6 +37,7 @@ function closeNav() {
   navToggler.setAttribute("aria-expanded", false);
   primaryNav.setAttribute("data-visible", false);
   body.classList.remove("overflow-hidden");
+  content.classList.remove("blur");
 }
 
 // Close navigation when clicking outside of it
