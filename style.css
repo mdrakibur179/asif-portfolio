@@ -65,8 +65,7 @@ html {
 }
 
 body {
-  font-size: 1.25rem;
-  font-family: "League Spartan", sans-serif;
+  font-family: sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: black;
@@ -526,7 +525,7 @@ header {
 
 /* Large Image Styling */
 .asif-img {
-  width: 34rem;
+  width: 30rem;
   height: auto;
   object-fit: cover;
   justify-self: center;
@@ -537,7 +536,7 @@ header {
 }
 
 .asif-img:hover {
-  transform: scale(1.5); /* Gentle scale effect */
+  transform: scale(1.01); /* Gentle scale effect */
 }
 
 /* .main-section__pro {
