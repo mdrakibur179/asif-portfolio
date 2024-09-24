@@ -751,7 +751,7 @@ li {
 
 .card-img {
   display: flex;
-  flex: 0 1 350px;
+  flex: 0 1 400px;
   height: auto;
   position: relative;
   border-radius: 4px;
