@@ -116,7 +116,76 @@ form.addEventListener("submit", function (e) {
     });
 });
 
-window.history.scrollRestoration = "manual";
-window.onload = function () {
-  window.scrollTo(0, 0);
-};
+// window.history.scrollRestoration = "manual";
+// window.onload = function () {
+//   window.scrollTo(0, 0);
+// };
+
+//asdfasdf
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector(".carousel");
+  const items = document.querySelectorAll(".carousel-item");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  let currentIndex = 0;
+  let intervalId;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateY(-${currentIndex * 100}%)`;
+  }
+
+  function showPrevItem() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    updateCarousel();
+  }
+
+  function showNextItem() {
+    currentIndex = (currentIndex + 1) % items.length;
+    updateCarousel();
+  }
+
+  function startAutoScroll() {
+    intervalId = setInterval(showNextItem, 2500);
+  }
+
+  function stopAutoScroll() {
+    clearInterval(intervalId);
+  }
+
+  prevButton.addEventListener("click", () => {
+    stopAutoScroll();
+    showPrevItem();
+    startAutoScroll();
+  });
+
+  nextButton.addEventListener("click", () => {
+    stopAutoScroll();
+    showNextItem();
+    startAutoScroll();
+  });
+
+  // Optional: Add touch support for mobile devices
+  let touchStartY = 0;
+  let touchEndY = 0;
+
+  carousel.addEventListener("touchstart", (e) => {
+    touchStartY = e.changedTouches[0].screenY;
+    stopAutoScroll();
+  });
+
+  carousel.addEventListener("touchend", (e) => {
+    touchEndY = e.changedTouches[0].screenY;
+    if (touchStartY - touchEndY > 50) {
+      showNextItem();
+    } else if (touchEndY - touchStartY > 50) {
+      showPrevItem();
+    }
+    startAutoScroll();
+  });
+
+  // Initialize carousel
+  updateCarousel();
+
+  // Start auto-scrolling
+  startAutoScroll();
+});
