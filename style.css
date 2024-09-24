@@ -512,8 +512,8 @@ header {
 .main-section__img {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
-  align-items: center;
+  gap: 1rem;
+  place-items: center;
   padding: 3rem 3rem;
 }
 
@@ -522,6 +522,12 @@ header {
     grid-template-columns: 1.25fr 1.5fr; /* Retain original image proportion */
   }
 }
+
+/* @media (min-width: 1080px) {
+  .main-section__img {
+    place-items: center;
+  }
+} */
 
 /* Large Image Styling */
 .asif-img {
