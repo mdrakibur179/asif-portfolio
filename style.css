@@ -192,7 +192,7 @@ header {
     display: none;
     position: absolute;
     left: 0%;
-    top: 90px;
+    top: 118%;
     background-color: #272727;
     flex-direction: column;
     width: 100%;
@@ -427,9 +427,9 @@ header {
   font-weight: 800;
   color: white;
 }
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   .main-section {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
   .main-section__desc-name p {
     font-size: 3rem;
@@ -526,16 +526,18 @@ header {
 
 /* Large Image Styling */
 .asif-img {
-  width: 38rem;
+  width: 34rem;
   height: auto;
   object-fit: cover;
   justify-self: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
   transition: transform 0.3s ease;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .asif-img:hover {
-  transform: scale(1.05); /* Gentle scale effect */
+  transform: scale(1.5); /* Gentle scale effect */
 }
 
 /* .main-section__pro {
@@ -610,11 +612,11 @@ header {
   }
 } */
 .carousel-container {
+  background-color: #272727;
   width: 100%;
   max-width: 800px;
   max-height: 550px;
   height: 450px;
-  min-height: 480px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -731,7 +733,7 @@ li {
 }
 
 .our-services {
-  padding-top: 6rem;
+  padding-top: 9rem;
   padding-bottom: 3rem;
 }
 
@@ -835,7 +837,7 @@ li {
 .recent-works {
   background-color: black;
   text-align: center;
-  padding-top: 8rem;
+  padding-top: 9rem;
   padding-bottom: 6rem;
 }
 
